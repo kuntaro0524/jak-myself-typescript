@@ -1,12 +1,16 @@
-export const Practice1 = () => {
+export const Practice2 = () => {
   // TypeScript で渡す変数をしっかりと定義しておく
-  const calcTotalFee = (num: number) => {
+  // さらに返却値を指定する
+  const getTotalFee = (num: number): number => {
     const total = num * 1.1;
-    console.log(total);
+    return total;
   };
 
   // 型を指定しておくとホバーしたらエラーが分かる
-  const onClickPractice = () => calcTotalFee(1000);
+  const onClickPractice = () => {
+    const totalFee = getTotalFee(1000);
+    console.log(totalFee);
+  };
 
   return (
     <div>
