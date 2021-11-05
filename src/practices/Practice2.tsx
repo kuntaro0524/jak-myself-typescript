@@ -14,8 +14,8 @@ export const Practice2 = () => {
 
   return (
     <div>
-      <p> 練習問題１ </p>
-      <button onClick={onClickPractice}>練習問題１を実行</button>
+      <p> 練習問題2 </p>
+      <button onClick={onClickPractice}>練習問題2を実行</button>
     </div>
   );
 };
