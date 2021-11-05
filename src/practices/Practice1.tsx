@@ -1,10 +1,11 @@
 export const Practice1 = () => {
-  const calcTotalFee = (num) => {
+  // TypeScript で渡す変数をしっかりと定義しておく
+  const calcTotalFee = (num: number) => {
     const total = num * 1.1;
     console.log(total);
   };
 
-  // カンマ区切りの数値なんかはわたしたら文字列になってしまう
+  // 型を指定しておくとホバーしたらエラーが分かる
   const onClickPractice = () => calcTotalFee("1,000");
 
   return (
