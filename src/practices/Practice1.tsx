@@ -4,8 +4,8 @@ export const Practice1 = () => {
     console.log(total);
   };
 
-  // 文字列で数字をわたしてあげてもJavaScriptは数値として解釈してくれる
-  const onClickPractice = () => calcTotalFee("1000");
+  // カンマ区切りの数値なんかはわたしたら文字列になってしまう
+  const onClickPractice = () => calcTotalFee("1,000");
 
   return (
     <div>
